@@ -6,9 +6,45 @@
     <script type="text/javascript" src="js/jquery-3.2.1.js"></script>
     <script type="text/javascript" src="js/scripts.js"></script>
     <meta charset="utf-8">
-    <title></title>
+    <title>Transportation Survey</title>
   </head>
   <body>
+    <div class="container">
+      <h1>Transportation Survey</h1>
+      <form id="transportation">
+        <div class="form-group">
+          <p>In the past year, I have used the following modes of transportation to travel to work or school:</p>
+          <label><input type="checkbox" name="work-transportation" value="bike"> Riding a bike</label><br>
+          <input type="checkbox" name="work-transportation" value="car"> Driving a car.<br>
+          <input type="checkbox" name="work-transportation" value="carpool"> Carpooling with others.<br>
+          <input type="checkbox" name="work-transportation" value="walk"> Walking.<br>
+          <input type="checkbox" name="work-transportation" value="bus"> Riding the bus.<br>
+          <input type="checkbox" name="work-transportation" value="train"> Riding the train.<br>
+          <input type="checkbox" name="work-transportation" value="streetcar"> Riding the streetcar.<br>
+          <input type="checkbox" name="work-transportation" value="taxi"> Taking a taxi.<br>
+        </div>
+
+        <div class="form-group">
+          <p>In the past year I have used the following modes of transportation for recreational purposes:</p>
+          <input type="checkbox" name="fun-transportation" value="bike"> Riding a bike .<br>
+          <input type="checkbox" name="fun-transportation" value="car"> Driving a car.<br>
+          <input type="checkbox" name="fun-transportation" value="carpool"> Carpooling with others.<br>
+          <input type="checkbox" name="fun-transportation" value="walk"> Walking.<br>
+          <input type="checkbox" name="fun-transportation" value="bus"> Riding the bus.<br>
+          <input type="checkbox" name="fun-transportation" value="train"> Riding the train.<br>
+          <input type="checkbox" name="fun-transportation" value="streetcar"> Riding the streetcar.<br>
+          <input type="checkbox" name="fun-transportation" value="taxi"> Taking a taxi.<br>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <div id="work-responses">
+        <h2>To travel to work, you use:</h2>
+      </div>
+      <div id="fun-responses">
+        <h2>To travel to fun places you use:</h2>
+      </div>
+    </div>
 
   </body>
 </html>
